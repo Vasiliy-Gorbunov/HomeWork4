@@ -42,6 +42,24 @@ public class Main {
             System.out.println("Вагон полностью заполнен!");
         }
 
-
+        //Задание 4
+        System.out.println("\nЗадание 4:");
+        int humanAge = 25;
+        boolean kinderGarten = humanAge >= 2 && humanAge < 7;
+        boolean school = humanAge >=7 && humanAge <=18;
+        boolean university = humanAge > 18 && humanAge <24;
+        if (kinderGarten) {
+            System.out.println("Если возраст человека равен "+humanAge+", то ему нужно ходить в детский сад");
+        }else {
+            if (school) {
+                System.out.println("Если возраст человека равен "+humanAge+", то ему нужно ходить в школу");
+            }else {
+                if (university) {
+                    System.out.println("Если возраст человека равен "+humanAge+", то его место в университете");
+                }else {
+                    System.out.println("Если возраст человека равен "+humanAge+", то ему уже пора на работу");
+                }
+            }
+        }
     }
 }
