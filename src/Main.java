@@ -42,8 +42,8 @@ public class Main {
             System.out.println("Вагон полностью заполнен!");
         }
 
-        //Задание 4
-        System.out.println("\nЗадание 4:");
+        //Задание 2-1
+        System.out.println("\nЗадание 2-1:");
         int humanAge = 25;
         boolean kinderGarten = humanAge >= 2 && humanAge < 7;
         boolean school = humanAge >=7 && humanAge <=18;
@@ -58,6 +58,38 @@ public class Main {
                     System.out.println("Если возраст человека равен "+humanAge+", то его место в университете");
                 }else {
                     System.out.println("Если возраст человека равен "+humanAge+", то ему уже пора на работу");
+                }
+            }
+        }
+
+        //Задание 2-2
+        System.out.println("\nЗадание 2-2:");
+        int childAge = 15;
+        if (childAge < 5) {
+            System.out.println("Ты пока не можешь кататься на аттракционе");
+        }else {
+            if (childAge >=5 && childAge < 14) {
+                System.out.println("Ты можешь кататься, но только в сопровождении взрослого");
+            }else {
+                System.out.println("Ты можешь кататься сам!");
+            }
+        }
+
+        //Задание 2-3
+        System.out.println("\nЗадание 2-3:");
+        int one = 6;
+        int two = 6;
+        int three = 6;
+        if (one > two) {
+            System.out.println("Больше первое значение и оно равно "+one);
+        }else {
+            if (two > three) {
+                System.out.println("Больше второе значение и оно равно "+two);
+            }else {
+                if (three != two) {
+                    System.out.println("Больше третье значение и оно равно "+three);
+                }else {
+                    System.out.println("Все три значения одинаковы и равны "+one);
                 }
             }
         }
